@@ -6,10 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .container div {
+            height: 200px;
+        }
+        .middle {
+            flex: 1;
+            background-color: rgb(238, 54, 54);
+        }
+        .left {
+            width: 200px;
+            background-color: rgb(95, 219, 64);
+            min-width: 200px;
+        }
+        .right {
+            width: 200px;
+            background-color: rgb(64, 143, 247);
+            min-width: 200px;
+        }
     </style>
 </head>
 <body>
-    <audio src="http://od.qingting.fm/m4a/5b63da147cb8910341563ae1_10569553_64.m4a" controls></audio>
+    <div class="container">
+            <div class="left">
+                    左边栏
+                </div>
+        <div class="middle">
+            <!-- <div class="inner"> -->
+                中间弹性区
+            <!-- </div> -->
+        </div>
+
+        <div class="right">
+            右边栏
+        </div>
+    </div>
 </body>
 </html>
